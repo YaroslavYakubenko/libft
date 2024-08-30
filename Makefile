@@ -6,7 +6,7 @@
 #    By: yyakuben <yyakuben@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 16:55:59 by yyakuben          #+#    #+#              #
-#    Updated: 2023/12/08 16:13:43 by yyakuben         ###   ########.fr        #
+#    Updated: 2024/08/20 16:17:11 by yyakuben         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,13 +27,15 @@ SRCS			=	ft_atoi.c ft_isalnum.c ft_isprint.c\
 
 OBJS			= $(SRCS:.c=.o)
 
+# SUCCES			= @echo "libft compiled successfully"
+
 BONUS			=	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
 					ft_lstdelone.c ft_lstiter.c ft_lstlast.c \
 					ft_lstmap.c ft_lstnew.c ft_lstsize.c
 BONUS_OBJS		= $(BONUS:.c=.o)
 
-CC				= cc
-RM				= rm -f
+CC				= @cc
+RM				= @rm -f
 CFLAGS			= -Wall -Wextra -Werror -I.
 
 NAME			= libft.a
